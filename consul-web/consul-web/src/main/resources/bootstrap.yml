@@ -1,0 +1,7 @@
+spring:
+    application:
+        name: consul-web
+    cloud:
+        consul:
+            discovery:
+                instanceId: consul-web:1111

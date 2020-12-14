@@ -1,0 +1,17 @@
+server:
+  port: 8333
+spring:
+    application:
+      name: config-server
+    profiles:
+      active:
+        - native
+    cloud:
+      config:
+        server:
+          #git:
+            #uri: git@gitlab.com:plavaga-playground/global-config.git
+            #clone-on-start: true
+          native:
+            search-locations:
+            - /opt/projects/workspace-cordis/projects/global-config
